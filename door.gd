@@ -19,5 +19,5 @@ func _on_body_exited(body):
 
 func _process(delta):
 	if player_inside and Input.is_action_just_pressed("ui_accept"):
-		var player = get_node("../Player")
+		var player = get_node("../../Player")
 		player.global_position = exit_point.global_position + Vector2(0, -16)
